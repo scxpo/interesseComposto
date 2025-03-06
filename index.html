@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Interesse Composto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcolo Interesse Composto</h1>
+        <form id="calcoloForm">
+            <label for="investimentoIniziale">Investimento Iniziale (€):</label>
+            <input type="number" id="investimentoIniziale" required>
+            
+            <label for="risparmioMensile">Risparmio Mensile (€):</label>
+            <input type="number" id="risparmioMensile" required>
+            
+            <label for="tassoAnnuale">Crescita Annuale (%):</label>
+            <input type="number" id="tassoAnnuale" required>
+            
+            <label for="durata">Durata (anni):</label>
+            <input type="number" id="durata" required>
+
+            <button type="submit">Calcola</button>
+        </form>
+
+        <div id="risultato" class="risultato">
+            <p id="totaleInvestito"></p>
+            <p id="interesseComposto"></p>
+            <p id="totaleFinale"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
